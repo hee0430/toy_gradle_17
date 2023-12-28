@@ -17,16 +17,21 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
-    implementation("org.springframework.boot:spring-boot-starter-tomcat:$springBootVersion")
-    implementation("org.springframework.boot:spring-boot-starter-mail:$springBootVersion")
-    implementation("org.springframework.boot:spring-boot-starter-websocket:$springBootVersion")
-    implementation("org.springframework.boot:spring-boot-starter-jdbc:$springBootVersion")
-    implementation("org.springframework.boot:spring-boot-starter-security:$springBootVersion")
-    implementation("org.springframework.boot:spring-boot-starter-aop:$springBootVersion")
-    implementation("org.springframework.boot:spring-boot-starter-cache:$springBootVersion")
-    implementation("org.springframework.boot:spring-boot-starter-webflux:$springBootVersion")
 
+    implementation("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
+//    implementation("org.springframework.boot:spring-boot-starter-webflux:$springBootVersion")
+
+//    implementation("org.springframework.boot:spring-boot-starter-mail:$springBootVersion")
+//    implementation("org.springframework.boot:spring-boot-starter-websocket:$springBootVersion")
+//    implementation("org.springframework.boot:spring-boot-starter-jdbc:$springBootVersion")
+//    implementation("org.springframework.boot:spring-boot-starter-security:$springBootVersion")
+//    implementation("org.springframework.boot:spring-boot-starter-aop:$springBootVersion")
+//    implementation("org.springframework.boot:spring-boot-starter-cache:$springBootVersion")
+
+    compileOnly ("org.projectlombok:lombok:1.18.20")
+    annotationProcessor("org.projectlombok:lombok:1.18.20")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
