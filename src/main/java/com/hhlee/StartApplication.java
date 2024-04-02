@@ -16,6 +16,7 @@ public class StartApplication {
         ConfigurableApplicationContext context = SpringApplication.run(StartApplication.class, args);
         System.out.println("이렇게 추가했어 추가했어");
         System.out.println("branch 에서 추가했어");
+        System.out.println("branch 에서 추가했어2");
         
     }
 }
