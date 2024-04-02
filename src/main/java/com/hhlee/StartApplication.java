@@ -14,7 +14,5 @@ public class StartApplication {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(StartApplication.class, args);
-        System.out.println("이렇게 추가했어 추가했어");
-        
     }
 }
